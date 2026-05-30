@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #07100f;
+  color: #f4f4f4;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 22px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  padding: 8px 12px;
+  color: #d6d6d6;
+}
+
+nav a.router-link-active {
+  color: #d8b76a;
+}
+
+.main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 25px 20px 60px;
+}
+
+.page-title {
+  margin-bottom: 25px;
+}
+
+.page-title h1 {
+  margin: 0 0 8px;
+}
+
+.page-title p {
+  margin: 0;
+  color: #a9b5b2;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.event-card {
+  overflow: hidden;
+  border-radius: 14px;
+  background: #101817;
+  border: 1px solid #1d2927;
+}
+
+.event-image {
+  min-height: 140px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.event-image h2,
+.event-image h3 {
+  margin: 0 0 8px;
+}
+
+.event-image p {
+  margin: 0;
+}
+
+.purple {
+  background: linear-gradient(135deg, #8d5cf6, #6d2df2);
+}
+
+.green {
+  background: linear-gradient(135deg, #00b477, #007a54);
+}
+
+.orange {
+  background: linear-gradient(135deg, #ff9d3d, #f03434);
+}
+
+.event-content {
+  padding: 18px;
+}
+
+.category {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 4px 9px;
+  border-radius: 20px;
+  background: #1f2a28;
+  color: #d8b76a;
+  font-size: 13px;
+}
+
+.event-content h2 {
+  margin: 0 0 8px;
+}
+
+.meta {
+  color: #a9b5b2;
+}
+
+.description {
+  color: #c7cfcc;
+}
+
+.registered-count {
+  color: #d8b76a;
+  font-size: 14px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.card-actions a,
+.register-button {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #1f2a28;
+  color: #ffffff;
+}
+
+.card-actions .primary-link,
+.register-button {
+  background: #d8b76a;
+  color: #111111;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #d8b76a;
+}
+
+.detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.detail-image {
+  min-height: 260px;
+  border-radius: 14px;
+}
+
+.detail-info {
+  padding: 25px;
+  border-radius: 14px;
+  background: #101817;
+  border: 1px solid #1d2927;
+}
+
+.registered-section,
+.empty-box,
+.register-form {
+  padding: 22px;
+  border-radius: 14px;
+  background: #101817;
+  border: 1px solid #1d2927;
+}
+
+.users-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.users-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 14px 0;
+  border-bottom: 1px solid #1d2927;
+}
+
+.users-list li:last-child {
+  border-bottom: none;
+}
+
+.users-list p {
+  margin: 5px 0 0;
+  color: #a9b5b2;
+}
+
+.empty-text {
+  color: #a9b5b2;
+}
+
+.register-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.register-form h2 {
+  margin-top: 0;
+}
+
+.register-form label {
+  display: block;
+  margin-bottom: 15px;
+  color: #d6d6d6;
+}
+
+.register-form input {
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #263532;
+  background: #07100f;
+  color: #ffffff;
+}
+
+.register-button {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.error-text {
+  display: block;
+  margin-top: 6px;
+  color: #ff8f8f;
+}
+
+.success-text {
+  color: #8ff0b3;
+}
+
+.toast {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  background: #d8b76a;
+  color: #111111;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+@media (max-width: 850px) {
+  .events-grid,
+  .detail-layout,
+  .register-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}
